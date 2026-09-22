@@ -14,8 +14,10 @@ function nextQuestion(focus=false){
   current=queue.shift();lastId=current.id;answered=false;
   el('chapter').textContent=`Chapter ${current.ch} · ${chapterNames[current.ch]}`;
   el('question').textContent=current.statement;
+  el('questionRu').textContent=`(${current.truth?current.tRu:current.fRu})`;
   for(const id of ['trueBtn','falseBtn']){el(id).disabled=false;el(id).className='answer';}
   el('feedback').hidden=true;el('feedback').className='feedback';
+  el('termsSection').hidden=true;el('terms').replaceChildren();
   for(const id of ['result','ru','en','source'])el(id).textContent='';
   el('nextBtn').disabled=true;
   el('hint').textContent='Выбери ответ, чтобы увидеть объяснение.';
@@ -32,6 +34,12 @@ function choose(value){
   const correct=value===current.truth;
   el('result').textContent=`${correct?'Correct':'Incorrect'} · Answer: ${current.truth?'True':'False'}`;
   el('ru').textContent=current.ru;el('en').textContent=current.en;
+  for(const term of current.terms){
+    const name=document.createElement('dt');name.textContent=term.name;
+    const definition=document.createElement('dd');definition.textContent=term.definition;
+    el('terms').append(name,definition);
+  }
+  el('termsSection').hidden=current.terms.length===0;
   el('source').textContent=`Source: Chapter ${current.ch} · ${current.source}`;
   el('feedback').className=`feedback ${correct?'ok':'bad'}`;el('feedback').hidden=false;
   el('hint').textContent='Прочитай объяснение и переходи дальше.';

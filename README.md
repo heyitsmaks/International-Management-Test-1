@@ -5,6 +5,8 @@ Endless static study quiz based on the supplied Doh, Luthans & Gaur 12th-edition
 - 80 concepts, each with one true and one false statement (160 authored variants).
 - Each pass covers every concept once, with equal true/false answers, shuffled independently. A new pass starts automatically; its first concept cannot repeat the previous one.
 - No question totals, timer, score, or final exam screen.
+- Russian translations in parentheses for both true and false variants.
+- Contextual terms and concise Russian definitions appear only after answering, when relevant.
 - Short Russian and English explanations with chapter/slide or discussion references.
 - Keyboard: T / F to answer, Enter to continue; standard Tab/button navigation also works.
 - Historical brand questions are explicitly framed as course-key examples. Screenshot item 4 is omitted because its company is unnamed.
