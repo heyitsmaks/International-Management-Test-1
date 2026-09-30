@@ -1,6 +1,20 @@
 'use strict';
 const $=id=>document.getElementById(id);
 const concepts=window.REVIEW_CONCEPTS||[];
+if(typeof QUESTION_BANK!=='undefined'){
+  QUESTION_BANK.filter(q=>q.ch===3).slice(0,10).forEach(q=>{
+    const raw=(q.terms&&q.terms[0]&&q.terms[0].name)?q.terms[0].name:q.t;
+    const term=raw.split('—')[0].trim();
+    concepts.push({
+      section:"Supplemental ethics review",
+      term,
+      def:q.t,
+      aliases:[term.toLowerCase()],
+      ru:q.ru,
+      en:q.en
+    });
+  });
+}
 
 function norm(s=''){return s.toLowerCase().replace(/[^a-z0-9\s-]/g,' ').replace(/\s+/g,' ').trim();}
 function shuffle(a){a=[...a];for(let i=a.length-1;i>0;i--){const j=Math.floor(Math.random()*(i+1));[a[i],a[j]]=[a[j],a[i]];}return a;}
