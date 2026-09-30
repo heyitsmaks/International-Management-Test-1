@@ -1,0 +1,4 @@
+window.REVIEW_CONCEPTS=(window.REVIEW_CONCEPTS||[]).concat([
+{section:"Ch. 4 — Differences in Culture",term:"Folkways vs. mores",def:"Folkways are routine social conventions; mores are norms with stronger moral significance.",aliases:["folkways vs mores","folkways and mores"],ru:"Folkways — повседневные правила и обычаи, а mores — более серьёзные нормы с сильной моральной составляющей.",en:"Folkways are everyday conventions; mores carry stronger moral significance."},
+{section:"Ch. 4 — Differences in Culture",term:"Cultural change",def:"Cultures are not static; they evolve over time as social, economic, technological, and other conditions change.",aliases:["cultural change","cultures evolve"],ru:"Культура обладает устойчивостью, но меняется со временем под влиянием экономики, технологий и социальных условий.",en:"Culture has continuity but changes over time through economic, technological, and social forces."}
+]);
