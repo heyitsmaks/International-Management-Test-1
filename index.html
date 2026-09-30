@@ -1,1 +1,43 @@
-<!doctype html><html><body><h1>Study Practice</h1></body></html>
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>MAN 4602 Review</title>
+<link rel="stylesheet" href="style.css">
+<script src="questions.js" defer></script>
+<script src="app.js" defer></script>
+</head>
+<body>
+<header><div class="wrap"><strong>MAN 4602 Review</strong><button id="homeBtn">Home</button></div></header>
+<main class="wrap">
+<section id="home">
+<h1>100 study prompts</h1>
+<p>Two study modes with immediate bilingual feedback.</p>
+<button id="mcqMode">Multiple Choice</button>
+<button id="writtenMode">Written Recall</button>
+<p>Scope: Chapters 1-5, CAGE, and Hershey. Culture Map is excluded by the study guide.</p>
+</section>
+<section id="quiz" hidden>
+<p id="section"></p><p id="topic"></p>
+<p id="progressText"></p><p id="scoreText"></p>
+<div class="progress"><div id="progressFill"></div></div>
+<h2 id="question"></h2>
+<div id="answerArea"></div>
+<section id="feedback" hidden>
+<h3 id="result"></h3>
+<p id="yourAnswer" hidden></p>
+<p id="correctAnswer"></p>
+<h3>Russian explanation</h3><p id="explanationRu"></p>
+<h3>English explanation</h3><p id="explanationEn"></p>
+<p id="source"></p>
+</section>
+<button id="nextBtn" hidden>Next</button>
+</section>
+<section id="finish" hidden>
+<h2>Session complete</h2><div id="finalScore"></div>
+<button id="restartBtn">Restart</button>
+</section>
+</main>
+</body>
+</html>
