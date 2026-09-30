@@ -1,0 +1,4 @@
+window.REVIEW_CONCEPTS=(window.REVIEW_CONCEPTS||[]).concat([
+{section:"Ch. 4 — Differences in Culture",term:"Culture",def:"A shared system of values, beliefs, and norms that influences how members of a group interpret and behave in the world.",aliases:["culture"],ru:"Culture обычно описывают через общие values и norms; при этом единственного универсального определения нет.",en:"Culture is commonly described through shared values and norms, although there is no single universally accepted definition."},
+{section:"Ch. 4 — Differences in Culture",term:"Values vs. norms",def:"Values are abstract ideas about what is good or desirable; norms are social rules that guide behavior.",aliases:["values vs norms","values and norms"],ru:"Values отвечают на вопрос, что считается правильным и желательным; norms — как люди должны вести себя.",en:"Values concern what is considered good or desirable; norms concern expected behavior."}
+]);
